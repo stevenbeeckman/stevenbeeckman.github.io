@@ -56,7 +56,7 @@
 
 		function checkFailedInviteCode(){
 			if(getQueryParameter("status") == "failed"){
-				$("invite").attribute('placeholder').value("Wrong invite code, please try again");
+				document.getElementById("invite").placeholder = "Wrong invite code, please try again";
 			}
 		}
 
