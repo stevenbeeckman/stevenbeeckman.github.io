@@ -64,8 +64,9 @@
 		checkFailedInviteCode();
 
 		$("#subscription-form").submit(function(e){
+			console.log("Does this get submitted?");
 			e.preventDefault();
-			console.log($("input#invite").val());
+			console.log($("#invite").val());
 			location.href = "http://game.startupbus.com/api/invite/check/" + $("input#invite").val();
 		});
 
