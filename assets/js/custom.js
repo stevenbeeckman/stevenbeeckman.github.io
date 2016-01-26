@@ -42,6 +42,26 @@
 			navbarAnimation(navbar, homeSection, navHeight);
 		});
 
+
+		/* ---------------------------------------------- 
+			Inform new try for invite code
+		* ----------------------------------------------- */
+
+		function getQueryParameter(name) {
+		    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		        results = regex.exec(location.search);
+		    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+		}
+
+		function checkFailedInviteCode(){
+			if(getQueryParameter("status") == "failed"){
+				$("invite").attribute('placeholder').value("Wrong invite code, please try again");
+			}
+		}
+
+		checkFailedInviteCode();
+
 		/* ---------------------------------------------- /*
 		 * Home section height
 		/* ---------------------------------------------- */
