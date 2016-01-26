@@ -55,6 +55,7 @@
 		}
 
 		function checkFailedInviteCode(){
+			console.log(getQueryParameter("status"));
 			if(getQueryParameter("status") == "failed"){
 				document.getElementById("invite").placeholder = "Wrong invite code, please try again";
 			}
