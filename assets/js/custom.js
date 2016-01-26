@@ -63,6 +63,12 @@
 
 		checkFailedInviteCode();
 
+		$("#subscription-form").submit(function(e){
+			e.preventDefault();
+			console.log($("input#invite").val());
+			location.href = "http://game.startupbus.com/api/invite/check/" + $("input#invite").val();
+		});
+
 		/* ---------------------------------------------- /*
 		 * Home section height
 		/* ---------------------------------------------- */
