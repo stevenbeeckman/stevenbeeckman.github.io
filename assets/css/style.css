@@ -1134,7 +1134,7 @@ Team
 }
 
 .team-image img {
-	width: 100%;
+	width: 200px;
 }
 
 .team-image:after {
