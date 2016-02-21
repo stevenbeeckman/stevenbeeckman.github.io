@@ -1,7 +1,7 @@
 var camera;
 var scene;
 var renderer;
-var mesh;
+var bus_spain;
   
 init();
 animate();
@@ -9,18 +9,18 @@ animate();
 function init() {
   
     scene = new THREE.Scene();
-    camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 1, 1000);
+    camera = new THREE.PerspectiveCamera( 21, window.innerWidth / window.innerHeight, 1, 1000);
   
     var light = new THREE.DirectionalLight( 0xffffff );
     light.position.set( 0, 1, 1 ).normalize();
     scene.add(light);
   
-    var geometry = new THREE.CubeGeometry( 10, 10, 10);
-    var material = new THREE.MeshPhongMaterial( { map: THREE.ImageUtils.loadTexture('images/spain.jpg') } );
+    var geometry = new THREE.CubeGeometry( 9, 5, 10);
+    var material_spain = new THREE.MeshPhongMaterial( { map: THREE.ImageUtils.loadTexture('images/spain.jpg') } );
   
-    mesh = new THREE.Mesh(geometry, material );
-    mesh.position.z = -50;
-    scene.add( mesh );
+    bus_spain = new THREE.Mesh(geometry, material_spain );
+    bus_spain.position.z = -50;
+    scene.add( bus_spain );
   
     renderer = new THREE.WebGLRenderer();
     renderer.setSize( window.innerWidth, window.innerHeight );
@@ -32,8 +32,8 @@ function init() {
 }
   
 function animate() {
-    mesh.rotation.x += .04;
-    mesh.rotation.y += .02;
+    //bus_spain.rotation.x += .04;
+    bus_spain.rotation.y += .02;
   
     render();
     requestAnimationFrame( animate );
