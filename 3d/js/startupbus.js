@@ -7,6 +7,8 @@ var bus_germany;
 var bus_italy;
 var bus_spain;
 var bus_uk;
+
+var camera_up = true;
   
 init();
 animate();
@@ -70,6 +72,17 @@ function init() {
 function animate() {
     //bus_spain.rotation.x += .04;
     //bus_spain.rotation.y += .02;
+    if(camera_up){
+        camera.position.y += .02;
+        if(camera.position.y > 15){
+            camera_up = false;
+        }
+    }else{
+        camera.position.y -= .02;
+        if(camera.position.y < -15){
+            camera_up = true;
+        }
+    }
   
     render();
     requestAnimationFrame( animate );
