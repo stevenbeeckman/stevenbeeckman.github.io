@@ -7,6 +7,7 @@ var bus_germany;
 var bus_italy;
 var bus_spain;
 var bus_uk;
+var grid;
 
 var camera_up = true;
   
@@ -32,33 +33,43 @@ function init() {
     
     bus_estonia = new THREE.Mesh(geometry, material_estonia );
     bus_estonia.position.z = -160;
+    bus_estonia.position.y = 2;
     bus_estonia.position.x = -30;
     scene.add( bus_estonia );
     
     bus_italy = new THREE.Mesh(geometry, material_italy );
     bus_italy.position.z = -140;
+    bus_italy.position.y = 2;
     bus_italy.position.x = -15;
     scene.add( bus_italy );
     
     bus_belgium = new THREE.Mesh(geometry, material_belgium );
     bus_belgium.position.z = -140;
+    bus_belgium.position.y = 2;
     bus_belgium.position.x = 15;
     scene.add( bus_belgium );
     
     bus_germany = new THREE.Mesh(geometry, material_germany );
     bus_germany.position.z = -100;
+    bus_germany.position.y = 2.1;
     bus_germany.position.x = 0;
     scene.add( bus_germany );
 
     bus_spain = new THREE.Mesh(geometry, material_spain );
     bus_spain.position.z = -160;
+    bus_spain.position.y = 2.1;
     bus_spain.position.x = 30;
     scene.add( bus_spain );
     
     bus_uk = new THREE.Mesh(geometry, material_uk );
     bus_uk.position.z = -190;
+    bus_uk.position.y = 2.1;
     bus_uk.position.x = 45;
     scene.add( bus_uk );
+
+    grid = new THREE.GridHelper(500, 10);
+    grid.setColors("green", "orange");
+    scene.add(grid);
     
     renderer = new THREE.WebGLRenderer();
     renderer.setSize( window.innerWidth, window.innerHeight );
