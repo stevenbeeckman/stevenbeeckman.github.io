@@ -7,9 +7,12 @@ var bus_germany;
 var bus_italy;
 var bus_spain;
 var bus_uk;
+
+var buses = new Array();
 var grid;
 
 var camera_up = true;
+var buses_move = true;
   
 init();
 animate();
@@ -67,9 +70,18 @@ function init() {
     bus_uk.position.x = 45;
     scene.add( bus_uk );
 
+    buses.push(bus_belgium);
+    buses.push(bus_estonia);
+    buses.push(bus_germany);
+    buses.push(bus_italy);
+    buses.push(bus_spain);
+    buses.push(bus_uk);
+
     grid = new THREE.GridHelper(500, 10);
-    grid.setColors("green", "orange");
+    grid.setColors("green", "green");
     scene.add(grid);
+
+    camera.position.z += 280;
     
     renderer = new THREE.WebGLRenderer();
     renderer.setSize( window.innerWidth, window.innerHeight );
@@ -92,6 +104,16 @@ function animate() {
         camera.position.y -= .02;
         if(camera.position.y < -15){
             camera_up = true;
+        }
+    }
+    for(var i = 0; i < buses.length; i++){
+        if(buses_move){
+            buses[i].position.z += .6;
+            if(camera.position.y > 10){
+                buses_move = false;
+            }
+        }else{
+            //buses[i].position.z -= .4;
         }
     }
   
