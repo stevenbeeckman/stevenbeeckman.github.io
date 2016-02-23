@@ -7,6 +7,10 @@ var bus_germany;
 var bus_italy;
 var bus_spain;
 var bus_uk;
+var bus_model;
+
+var loader;
+
 
 var buses = new Array();
 var grid;
@@ -21,6 +25,15 @@ function init() {
   
     scene = new THREE.Scene();
     camera = new THREE.PerspectiveCamera( 20, window.innerWidth / window.innerHeight, 1, 1000);
+    loader = new THREE.ObjectLoader();
+
+    loader.load("assets/bus.json",function ( obj ) {
+        console.log("Loaded startupbus model");
+        bus_model = obj;
+        bus_model.position.z = 240;
+        bus_model.position.x = 7;
+        scene.add( bus_model );
+    });
   
     var light = new THREE.DirectionalLight( 0xffffff );
     light.position.set( 0, 1, 1 ).normalize();
