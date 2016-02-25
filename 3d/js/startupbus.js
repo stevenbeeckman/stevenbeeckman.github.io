@@ -42,7 +42,7 @@ function init() {
     var geometry = new THREE.CubeGeometry( 9, 5, 9);
     var material_belgium = new THREE.MeshPhongMaterial( { map: THREE.ImageUtils.loadTexture('images/belgium.jpg') } );
     var material_estonia = new THREE.MeshPhongMaterial( { map: THREE.ImageUtils.loadTexture('images/estonia.jpg') } );
-    var material_germany = new THREE.MeshPhongMaterial( { map: THREE.ImageUtils.loadTexture('images/germany.jpg') } );
+    var material_germany = new THREE.MeshPhongMaterial( { map: THREE.ImageUtils.loadTexture('http://i.giphy.com/GpUeJjdxvTIek.gif') } );
     var material_italy = new THREE.MeshPhongMaterial( { map: THREE.ImageUtils.loadTexture('images/italy.jpg') } );
     var material_spain = new THREE.MeshPhongMaterial( { map: THREE.ImageUtils.loadTexture('images/spain.jpg') } );
     var material_uk = new THREE.MeshPhongMaterial( { map: THREE.ImageUtils.loadTexture('images/uk.jpg') } );
