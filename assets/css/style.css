@@ -1226,6 +1226,11 @@ Price-tables
 
 .price-table.best {
 	margin: 0 0 30px;
+	border-color: #666666;
+	background-color: #eeeeee;
+}
+.price-table.best .borderline:after {
+	background-color: #eeeeee;
 }
 
 .price-table .small {
