@@ -36,11 +36,11 @@
 	<style>
 		/* Style adjustments */
 		.stroke {
-		    text-shadow:
-		    -1px -1px 0 #000,
-		    1px -1px 0 #000,
-		    -1px 1px 0 #000,
-		    1px 1px 0 #000;
+			text-shadow:
+			-1px -1px 0 #000,
+			1px -1px 0 #000,
+			-1px 1px 0 #000,
+			1px 1px 0 #000;
 		}
 
 		.module-title {
@@ -74,6 +74,23 @@
 		  display: inline-block;
 		  text-align: left;
 		  vertical-align: middle;
+		}
+
+		.modal-body p {
+			font-size: 15px;
+		}
+
+		.modal-body a:hover,
+		.modal-body a:focus,
+		.modal-body a:visited,
+		.modal-body a:active,
+		.modal-body a:link  {
+			text-decoration: underline;
+			font-weight: bold;
+		}
+
+		.modal-header {
+			border: none;
 		}
 	</style>
 </head>
@@ -649,35 +666,31 @@
 	<!-- Modals -->
 	<div id="twitterInviteCodeModal" tabindex="-1" class="modal fade" role="dialog">
 		<div class="modal-dialog">
-		    <div class="modal-content">
-			    <div class="modal-header">
+			<div class="modal-content">
+				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
-					<h4 class="modal-title">Application Process</h4>
-			    </div>
-			    <div class="modal-body">
-			    	<p>
-
-						<a href="https://twitter.com/intent/tweet?text=Hi%20%40TheStartupBus%2C%20I%20want%20to%20ride%20the%20%23StartupBus%20from%20the%20UK%20but%20it%20is%20locked!%20http%3A%2F%2Feurope.startupbus.com%2Fbus%2Fuk%2F&related=TheStartupBus,StartupBusUK" target="_blank">tweeting to @TheStartupBus and @StartupbusUK
-						</a>!
-			    	</p>
-			    </div>
-			    <div class="modal-footer">
+				</div>
+				<div class="modal-body">
+					<p>
+						<a href="https://twitter.com/intent/tweet?text=Hi%20%40TheStartupBus%2C%40StartupBusUK%2C%20I%20want%20to%20ride%20the%20%23StartupBus%20from%20the%20UK!%20http%3A%2F%2Feurope.startupbus.com%2Fbus%2Fuk%2F&related=TheStartupBus,StartupBusUK" target="_blank">Tweet @StartupBusUK and follow us
+						</a> and we'll message you an invite code!
+					</p>
+					<p>
+						After you have an invite code,
+						<a href="../../apply.html">click here to apply!</a>
+					</p>
+				</div>
+				<div class="modal-footer">
 					<a href="../../apply.html" class="btn btn-primary btn-round">
 						<i class="fa fa-heart"></i>
 					Apply with invite code!
 					</a>
-			    </div>
-		    </div>
+				</div>
+			</div>
 		</div>
 	</div>
-
-	<script>
-		$("twitterInviteCodeModal").modal({
-			// TODO
-		});
-	</script>
 
 </body>
 </html>
