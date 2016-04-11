@@ -92,6 +92,15 @@
 		.modal-header {
 			border: none;
 		}
+
+		#program-background {
+			transition: background 1s linear;
+			background-image: url('TODO');
+		}
+
+		p.larger {
+			font-size: 14px;
+		}
 	</style>
 </head>
 <body>
@@ -139,23 +148,19 @@
 	<div class="main">
 
 		<!-- Header section start -->
-		<!--<section class="module bg-dark bg-dark-60" data-background="../../assets/images/section-4.jpg">-->
 		<section class="module bg-dark bg-dark-60" data-background="startupbus_uk_2015.jpg">
 			<div class="container">
-
 				<div class="row">
-
 					<div class="col-sm-6 col-sm-offset-3">
-
 						<h1 class="module-title font-alt">StartupBus UK 2016</h1>
 						<div class="module-subtitle font-serif mb-0">
-							Build startups whilst travelling across Europe from the top of a double decker bus!
+						<h3><strong>The StartupBus is back!</strong></h3>
+						<p>
+							You cannot miss the biggest, most insane startup event of the year! A hackathon on wheels, where incredible Buspreneurs will build startups while on the move!
+						</p>
 						</div>
-
 					</div>
-
 				</div><!-- .row -->
-
 			</div>
 		</section>
 		<!-- Header section end -->
@@ -167,58 +172,74 @@
 		<!-- About start -->
 		<section id="about" class="module">
 			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<h4 class="font-alt">The UK Connection</h4>
+						<p class="larger">
+<strong>25 hackers, 4 days, 6 Cities</strong>. The UK bus experience a journey to create unbelievable startups and unite the European Startup Ecosystem! That's <strong>1,000 miles</strong> of road to conceive, build and launch a startup!
+					    </p>
+						<p class="larger">
+At every stop we will be <strong>co-hosting incredible events in top co-working spaces</strong> around Europe, and we will have the <strong>top entrepreneurs</strong> from each local startup community attending.
+
+The Grand Finale will be hosted at <strong>Pirate Summit in Cologne</strong> -- the craziest, invitation-only early-stage startup event in Europe!
+						</p>
+					</div>
+					<div class="col-sm-6">
+						<br />
+						<div style="width: 70%; margin: 0 auto;">
+						<img src="stbuk-inline.jpg" alt="StartupBus UK" />
+						</div>
+					</div>
+				</div>
 
 				<div class="row">
-
 					<div class="col-sm-6">
+						<h4 class="font-alt">We're looking for 3 kinds of talent</h4>
+						<br />
 
-						<h5 class="font-alt">The UK connection</h5>
-						<br>
-						<p>London, the European capital of fintech startups.</p>
-						<p>But there's so much more in the UK that meets the Eye! Find out on the StartupBus UK!</p>
+                        <h6 class="font-alt"><span class="icon-tools-2"></span> Developers</h6>
+                        <div class="progress">
+                            <div class="progress-bar pb-dark" aria-valuenow="50" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                <span class="font-alt"></span>
+                            </div>
+                        </div>
 
+                        <h6 class="font-alt"><span class="icon-grid"></span> Designers</h6>
+                        <div class="progress">
+                            <div class="progress-bar pb-dark" aria-valuenow="25" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                <span class="font-alt"></span>
+                            </div>
+                        </div>
+
+                        <h6 class="font-alt"><span class="icon-flag"></span> Hustlers</h6>
+                        <div class="progress">
+                            <div class="progress-bar pb-dark" aria-valuenow="25" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                <span class="font-alt"></span>
+                            </div>
+                        </div>
 					</div>
-
 					<div class="col-sm-6">
-						<h5 class="font-alt">We're looking for 3 kinds of talent on our bus</h5>
-						<br/>
-						<h6 class="font-alt"><span class="icon-tools-2"></span> Developers</h6>
-						<div class="progress">
-							<div class="progress-bar pb-dark" aria-valuenow="50" role="progressbar" aria-valuemin="0" aria-valuemax="100">
-								<span class="font-alt"></span>
-							</div>
-						</div>
-
-						<h6 class="font-alt"><span class="icon-grid"></span> Designers</h6>
-						<div class="progress">
-							<div class="progress-bar pb-dark" aria-valuenow="25" role="progressbar" aria-valuemin="0" aria-valuemax="100">
-								<span class="font-alt"></span>
-							</div>
-						</div>
-
-						<h6 class="font-alt"><span class="icon-flag"></span> Hustlers</h6>
-						<div class="progress">
-							<div class="progress-bar pb-dark" aria-valuenow="25" role="progressbar" aria-valuemin="0" aria-valuemax="100">
-								<span class="font-alt"></span>
-							</div>
-						</div>
-
+						<br /><br /><br /><br />
+						<p class="larger">
+In this amazing journey, you'll meet <strong>awesome people and learn new skills</strong>. Not only will the experience open the portal to our European-wide community of developers, designers, hustlers and all round startup lovers, but you'll also grow your direct network and open doors to a <strong>whole host of new ideas and opportunities!</strong>
+						</p>
 					</div>
-
+				</div>
+						</p>
+					</div>
 				</div><!-- .row -->
-
 			</div>
 		</section>
 		<!-- About end -->
 
+
+
 		<!-- Program start -->
-		<section class="module bg-dark">
+		<section class="module bg-dark" id="program"
+				 	data-background="program_background1.jpg">
 			<div class="container">
-
 				<div class="row">
-
 					<div class="col-sm-8 col-sm-offset-2">
-
 						<h4 class="font-alt mb-0">Program</h4>
 						<hr class="divider-w mt-10 mb-20">
 
@@ -352,18 +373,14 @@
 		<!-- Team start -->
 		<section id="team" class="module">
 			<div class="container">
-
 				<div class="row">
-
 					<div class="col-sm-6 col-sm-offset-3">
-
 						<h2 class="module-title font-alt">Meet The Team</h2>
 						<div class="module-subtitle font-serif">
-							A bus doesn't organise itself. That's why we found a kick-ass team!
+							A bus doesn't organise itself.<br />
+							That's why we found a kick-ass team!
 						</div>
-
 					</div>
-
 				</div><!-- .row -->
 
 				<div class="row">
@@ -377,10 +394,11 @@
 									<div class="team-detail">
 										<h5 class="font-alt">CONDUCTOR</h5>
 										<p class="font-serif">
-											Software developer and StartupBus UK 2015 alumnus
+											Software developer / StartupBus UK 2015 alumnus
 										</p>
 										<div class="team-social">
 											<a href="https://twitter.com/donald_whyte"><i class="fa fa-twitter"></i></a>
+											<a href="https://uk.linkedin.com/in/donaldwhyte"><i class="fa fa-linkedin"></i></a>
 										</div>
 									</div>
 								</div>
@@ -399,11 +417,12 @@
 									<div class="team-detail">
 										<h5 class="font-alt">PRODUCER</h5>
 										<p class="font-serif">
-											Marketing mastermind and founder
+											Marketing mastermind / founder
 											of StartGround
 										</p>
 										<div class="team-social">
 											<a href="https://twitter.com/SallyKuok"><i class="fa fa-twitter"></i></a>
+											<a href="https://uk.linkedin.com/in/sinokkuok"><i class="fa fa-linkedin"></i></a>
 										</div>
 									</div>
 								</div>
@@ -422,11 +441,11 @@
 									<div class="team-detail">
 										<h5 class="font-alt">PRODUCER</h5>
 										<p class="font-serif">
-											Entrepreneur based in the north,
-											founder of onShowcase
+											Founder / StartupBus UK 2014 alumnus
 										</p>
 										<div class="team-social">
 											<a href="https://twitter.com/AthenaTrophy"><i class="fa fa-twitter"></i></a>
+											<a href="https://uk.linkedin.com/in/laurabaines"><i class="fa fa-linkedin"></i></a>
 										</div>
 									</div>
 								</div>
@@ -456,14 +475,15 @@
 
 						<div class="video-box">
 							<div class="video-box-icon stroke">
-								<a href="http://www.youtube.com/watch?v=ZCSRTDkhoWA" class="video-pop-up"><span class="icon-video"></span></a>
+								<a href="//player.vimeo.com/video/111561332" class="video-pop-up">
+									<span class="icon-video"></span>
+								</a>
 							</div>
 							<div class="video-title stroke font-alt">
 								Video
 							</div>
 							<div class="video-subtitle stroke font-alt">
-								Get a taste of the craziness of the event with this
-								snippet from the 2014 UK bus!
+								Check out this press release from the 2014 UK bus.
 							</div>
 						</div>
 
@@ -662,6 +682,7 @@
 	<script src="../../assets/js/owl.carousel.min.js"></script>
 	<script src="../../assets/js/contact.js"></script>
 	<script src="../../assets/js/custom.js"></script>
+	<script src="../../assets/js/jquery.colorbox-min.js"></script>
 
 	<!-- Modals -->
 	<div id="twitterInviteCodeModal" tabindex="-1" class="modal fade" role="dialog">
