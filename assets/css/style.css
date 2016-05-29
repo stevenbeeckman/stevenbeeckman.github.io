@@ -848,9 +848,9 @@ Home Section
 }
 
 .hs-title-size-4 {
-	letter-spacing: 24px;
-	font-weight: 400;
-	font-size: 48px;
+   letter-spacing: 1px;
+   font-weight: 400;
+   font-size: 48px;
 }
 
 /* Video */
