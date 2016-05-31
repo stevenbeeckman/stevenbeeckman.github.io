@@ -2670,3 +2670,72 @@ Vertival margin, padding
 	.mb-xs-80 {margin-bottom:80px !important}
 
 }
+
+/*
+ * Styles Added by Donald
+*/
+
+#hero {
+	background-size: cover;
+	position: relative;
+	height: 100vh;
+}
+
+#hero-container {
+	position: relative;
+    display: table;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgba(1, 1, 1, 0.35);
+}
+
+#hero-content {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#hero-content .btn {
+  font-size: 18px;
+  font-weight: bold;
+}
+#hero-content .btn-border-w {
+  background: transparent;
+  color: #B1C3CE;
+  border-color: #B1C3CE;
+}
+#hero-content .btn-border-w:hover {
+  background: transparent;
+  color: #fff;
+  border-color: #fff;
+}
+#hero-content .btn-primary {
+  background-color: #00AEEF;
+  border-color: #00AEEF;
+  color: #fff;
+}
+#hero-content .btn-primary:hover {
+  color: #231F20;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.bus-name, .bus-subtitle, .bus-route {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 0 2px 1px rgba(0,0,0,.6);
+}
+.bus-name {
+  font-size: 52px;
+  letter-spacing: 2px;
+}
+.bus-subtitle {
+  font-size: 38px;
+  letter-spacing: 2px;
+}
+.bus-route {
+  font-size: 20px;
+  letter-spacing: 3px;
+}
