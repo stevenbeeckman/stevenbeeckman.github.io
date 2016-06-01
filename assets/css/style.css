@@ -2728,7 +2728,7 @@ Vertival margin, padding
 	width: 150px;
 }
 
-.bus-name, .bus-subtitle, .bus-route {
+.bus-name, .bus-date, .bus-route {
   font-family: "Roboto Condensed", sans-serif;
   color: #fff;
   text-transform: uppercase;
@@ -2738,11 +2738,11 @@ Vertival margin, padding
   font-size: 52px;
   letter-spacing: 2px;
 }
-.bus-subtitle {
-  font-size: 38px;
-  letter-spacing: 2px;
+.bus-date {
+  font-size: 22px;
+  letter-spacing: 1px;
 }
 .bus-route {
   font-size: 20px;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
 }
