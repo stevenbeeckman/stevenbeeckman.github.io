@@ -2675,6 +2675,10 @@ Vertival margin, padding
  * Styles Added by Donald
 */
 
+#home-hero-overlay {
+	background-color: rgba(1, 1, 1, 0.35);
+}
+
 #hero {
 	background-size: cover;
 	position: relative;
