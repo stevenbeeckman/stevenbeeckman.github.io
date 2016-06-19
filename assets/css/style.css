@@ -2740,6 +2740,10 @@ Vertival margin, padding
   border-color: #fff;
 }
 
+.module {
+  padding: 70px 0px;
+}
+
 .module-title {
   font-size: 36px;
 }
@@ -2797,12 +2801,7 @@ Vertival margin, padding
     1px 1px 0 #000;
 }
 
-.low-padding {
-  padding-top: 70px;
-  padding-bottom: 90px;
-}
-
-.low-padding h2 {
+.route-module h2 {
   margin-bottom: 30px;
 }
 
