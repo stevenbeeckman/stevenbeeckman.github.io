@@ -4,13 +4,14 @@
 	 * Preloader
 	/* ---------------------------------------------- */
 
-	$(window).load(function() {
-		$('.loader').fadeOut();
-		$('.page-loader').delay(350).fadeOut('slow');
-	});
+	// $(window).load(function() {
+		
+	// });
 
 	$(document).ready(function() {
-
+		$('.loader').fadeOut();
+		$('.page-loader').delay(350).fadeOut('slow');
+		
 		/* ---------------------------------------------- /*
 		 * Initialization General Scripts for all pages
 		/* ---------------------------------------------- */
@@ -391,10 +392,10 @@
 		 * WOW Animation When You Scroll
 		/* ---------------------------------------------- */
 
-		wow = new WOW({
-			mobile: false
-		});
-		wow.init();
+		// wow = new WOW({
+		// 	mobile: false
+		// });
+		// wow.init();
 
 		/* ---------------------------------------------- /*
 		 * Rotate
