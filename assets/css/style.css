@@ -2806,3 +2806,7 @@ Vertival margin, padding
   margin-bottom: 30px;
 }
 
+.route-image img {
+  display: block;
+  margin: 0 auto;
+}
