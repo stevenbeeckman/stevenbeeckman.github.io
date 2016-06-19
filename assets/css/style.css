@@ -1604,10 +1604,10 @@ Callout
 }
 
 .callout-title {
-  font-weight: 400;
-  font-size: 16px;
-  color: #fff;
-  margin: 0;
+	font-weight: 400;
+	font-size: 16px;
+	color: #1d1d1d;
+	margin: 0;
 }
 
 .callout-btn-box {
@@ -2462,10 +2462,11 @@ Responsive Media Querries
     margin: 0 0 30px;
   }
 
-  .callout-text,
-  .callout-btn-box {
-    text-align: center;
-  }
+	.callout-text,
+	.callout-btn-box,
+	.callout-w-btn-box {
+		text-align: center;
+	}
 
   /* Sidebar */
 
@@ -2749,7 +2750,7 @@ Vertival margin, padding
 }
 
 .module-subtitle {
-  font-size: 26px;
+  font-size: 20px;
 }
 
 .bus-icon img {
