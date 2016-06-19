@@ -4,13 +4,14 @@
 	 * Preloader
 	/* ---------------------------------------------- */
 
-	$(window).load(function() {
-		$('.loader').fadeOut();
-		$('.page-loader').delay(350).fadeOut('slow');
-	});
+	// $(window).load(function() {
+		
+	// });
 
 	$(document).ready(function() {
-
+		$('.loader').fadeOut();
+		$('.page-loader').delay(350).fadeOut('slow');
+		
 		/* ---------------------------------------------- /*
 		 * Initialization General Scripts for all pages
 		/* ---------------------------------------------- */
@@ -426,13 +427,13 @@
 		 * Scroll Animation
 		/* ---------------------------------------------- */
 
-		$('.section-scroll').bind('click', function(e) {
-			var anchor = $(this);
-			$('html, body').stop().animate({
-				scrollTop: $(anchor.attr('href')).offset().top - 50
-			}, 1000);
-			e.preventDefault();
-		});
+		// $('.section-scroll').bind('click', function(e) {
+		// 	var anchor = $(this);
+		// 	$('html, body').stop().animate({
+		// 		scrollTop: $(anchor.attr('href')).offset().top - 50
+		// 	}, 1000);
+		// 	e.preventDefault();
+		// });
 
 		/* ---------------------------------------------- /*
 		 * Scroll top
