@@ -392,10 +392,10 @@
 		 * WOW Animation When You Scroll
 		/* ---------------------------------------------- */
 
-		wow = new WOW({
-			mobile: false
-		});
-		wow.init();
+		// wow = new WOW({
+		// 	mobile: false
+		// });
+		// wow.init();
 
 		/* ---------------------------------------------- /*
 		 * Rotate
@@ -427,13 +427,13 @@
 		 * Scroll Animation
 		/* ---------------------------------------------- */
 
-		// $('.section-scroll').bind('click', function(e) {
-		// 	var anchor = $(this);
-		// 	$('html, body').stop().animate({
-		// 		scrollTop: $(anchor.attr('href')).offset().top - 50
-		// 	}, 1000);
-		// 	e.preventDefault();
-		// });
+		$('.section-scroll').bind('click', function(e) {
+			var anchor = $(this);
+			$('html, body').stop().animate({
+				scrollTop: $(anchor.attr('href')).offset().top - 50
+			}, 1000);
+			e.preventDefault();
+		});
 
 		/* ---------------------------------------------- /*
 		 * Scroll top
