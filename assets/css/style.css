@@ -1606,7 +1606,7 @@ Callout
 .callout-title {
 	font-weight: 400;
 	font-size: 16px;
-	color: #fff;
+	color: #1d1d1d;
 	margin: 0;
 }
 
@@ -2463,7 +2463,8 @@ Responsive Media Querries
 	}
 
 	.callout-text,
-	.callout-btn-box {
+	.callout-btn-box,
+	.callout-w-btn-box {
 		text-align: center;
 	}
 
