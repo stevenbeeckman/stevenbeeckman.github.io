@@ -964,6 +964,12 @@ Sections
 	margin-bottom: 35px;
 }
 
+/** bus video container */
+
+#busVideoContainer {
+	padding-top:180px;
+	padding-bottom:180px;
+}
 
 /* Sections dividers */
 
