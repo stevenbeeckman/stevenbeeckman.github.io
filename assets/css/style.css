@@ -2810,3 +2810,8 @@ Vertival margin, padding
   display: block;
   margin: 0 auto;
 }
+
+.team-detail h5,
+.team-detail p {
+  color: white;
+}
