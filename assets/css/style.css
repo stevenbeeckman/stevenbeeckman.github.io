@@ -2815,3 +2815,16 @@ Vertival margin, padding
 .team-detail p {
   color: white;
 }
+
+.sponsor-table table {
+  padding: 0px;
+  margin: 0px;
+}
+
+.sponsor-table td {
+  padding: 10px;
+}
+
+.sponsor-table img {
+  width: 140px;
+}
