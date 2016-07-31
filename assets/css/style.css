@@ -2836,3 +2836,7 @@ Vertival margin, padding
 .sponsor-title {
   margin-bottom: 10px;
 }
+
+.big-sponsor-logos img {
+  width: 240px;
+}
