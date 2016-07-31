@@ -2828,3 +2828,11 @@ Vertival margin, padding
 .sponsor-table img {
   width: 140px;
 }
+
+.sponsor-table .core-sponsors img {
+  width: 160px;
+}
+
+.sponsor-title {
+  margin-bottom: 10px;
+}
