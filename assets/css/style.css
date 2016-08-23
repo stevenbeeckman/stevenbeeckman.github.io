@@ -2833,6 +2833,10 @@ Vertival margin, padding
   width: 160px;
 }
 
+.sponsor-table .comms img {
+  width: 120px !important;
+}
+
 .sponsor-title {
   margin-bottom: 10px;
 }
