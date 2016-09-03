@@ -38,6 +38,13 @@ div#map-canvas {
 	.caption-top {
 		font-size:72%
 	}
+
+	#bus-logo {
+		position: absolute;
+		top: 60%;
+		right: 5px;
+		z-index:15;
+	}
 }
 
 .caption-top {
