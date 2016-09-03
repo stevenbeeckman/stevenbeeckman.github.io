@@ -5,8 +5,8 @@ function initialize() {
     var mapOptions = {
         zoom: 6,
         center: myLatlng,
-        //scrollwheel: false,
-        //draggable: false,
+        scrollwheel: false,
+        draggable: false,
         disableDefaultUI: true,
         mapTypeId: google.maps.MapTypeId.SATELLITE
     }
