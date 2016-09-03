@@ -1,9 +1,9 @@
 google.maps.event.addDomListener(window, 'load', initialize);
 
 function initialize() {
-    var myLatlng = new google.maps.LatLng(51.1977869,5.6730239);
+    var myLatlng = new google.maps.LatLng(50.6977869,5.6730239);
     var mapOptions = {
-        zoom: 5,
+        zoom: 6,
         center: myLatlng,
         //scrollwheel: false,
         //draggable: false,
@@ -103,9 +103,9 @@ function initialize() {
 
                   var icon = {
                     url: getBusMarker(route.name),
-                    anchor: new google.maps.Point(20, 25),
+                    anchor: new google.maps.Point(52, 64),
                     origin: new google.maps.Point(0, 0),
-                    size: new google.maps.Size(40, 25)
+                    size: new google.maps.Size(104, 64)
                   };
 
                   var new_bus = new google.maps.Marker({
@@ -155,16 +155,16 @@ function initialize() {
       var marker;
       switch(bus) { 
         case "Belgium":
-          marker = "assets/images/markers/BE.png";
+          marker = "assets/images/markers/belgium-1.png";
           break;
         case "France":
-          marker = "assets/images/markers/FR.png";
+          marker = "assets/images/markers/france-1.png";
           break;
         case "Switzerland":
-          marker = "assets/images/markers/CH.png";
+          marker = "assets/images/markers/swiss-1.png";
           break;
         case "UK":
-          marker = "assets/images/markers/UK.png";
+          marker = "assets/images/markers/uk-1.png";
           break;
         default:
           marker = "assets/images/markers/BE.png";
