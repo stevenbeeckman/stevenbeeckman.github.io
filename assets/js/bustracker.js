@@ -108,9 +108,9 @@ function initialize() {
 
                   var icon = {
                     url: getBusMarker(route.name),
-                    anchor: new google.maps.Point(52, 64),
+                    anchor: new google.maps.Point(37, 46),
                     origin: new google.maps.Point(0, 0),
-                    size: new google.maps.Size(104, 64)
+                    size: new google.maps.Size(75, 46)
                   };
 
                   var new_bus = new google.maps.Marker({
@@ -160,16 +160,16 @@ function initialize() {
       var marker;
       switch(bus) { 
         case "Belgium":
-          marker = "assets/images/markers/belgium-1.png";
+          marker = "assets/images/markers/belgium-75.png";
           break;
         case "France":
-          marker = "assets/images/markers/france-1.png";
+          marker = "assets/images/markers/france-75.png";
           break;
         case "Switzerland":
-          marker = "assets/images/markers/swiss-1.png";
+          marker = "assets/images/markers/swiss-75.png";
           break;
         case "UK":
-          marker = "assets/images/markers/uk-1.png";
+          marker = "assets/images/markers/uk-75.png";
           break;
         default:
           marker = "assets/images/markers/BE.png";
