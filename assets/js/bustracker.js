@@ -67,7 +67,7 @@ function initialize() {
 
               _.each(data.routes, function(route){
                 if(route.points.length > 0 && (route.name == "Belgium" || route.name == "France" || route.name == "Switzerland" || route.name == "UK")){
-                  console.dir(route);
+                  //console.dir(route);
                   var lat_lng = [];
                   if(route.name == "Belgium"){
                     lat_lng.push(new google.maps.LatLng(50.8473592,4.3567822));
@@ -84,12 +84,16 @@ function initialize() {
                     lat_lng.push(new google.maps.LatLng(47.3943422,8.5205415));
                   }
                   if(route.name == "UK"){
+                    //console.dir(route);
                     lat_lng.push(new google.maps.LatLng(51.6448521,-0.2982731));
                   }
                   
                   var lines = _.map(route.points, function(point){
                       //this is sending commas or zeros
-                       lat_lng.push(new google.maps.LatLng(parseFloat(point.lat), parseFloat(point.lon)));
+                      //console.log(route.name + " (" + point.ts + "): " + point.miles + " miles (" + point.lat + ", " + point.lon + ")");
+                      if(!(route.name == "UK" && parseInt(point.miles) == 293)){
+                        lat_lng.push(new google.maps.LatLng(parseFloat(point.lat), parseFloat(point.lon)));
+                      }
                   });
 
                   var flightPath = new google.maps.Polyline({
