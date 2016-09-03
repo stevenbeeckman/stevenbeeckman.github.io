@@ -5,8 +5,9 @@ function initialize() {
     var mapOptions = {
         zoom: 5,
         center: myLatlng,
-        scrollwheel: false,
-        draggable: false,
+        //scrollwheel: false,
+        //draggable: false,
+        disableDefaultUI: true,
         mapTypeId: google.maps.MapTypeId.SATELLITE
     }
     window.map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
