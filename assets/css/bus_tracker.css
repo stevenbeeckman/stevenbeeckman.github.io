@@ -5,6 +5,14 @@
 	padding-left: 10px;
 }
 
+#bus-stats {
+	position: absolute;
+	top: 70%;
+	left: 10px;
+	z-index: 10;
+	font-size: 1em;
+}
+
 div#map-canvas {
 	height:100%;
 }
@@ -18,6 +26,7 @@ div#map-canvas {
 	font-size: 3em;
 	letter-spacing: 4px;
 }
+
 @media (max-width:480px){
 	.caption-top {
 		font-size:72%

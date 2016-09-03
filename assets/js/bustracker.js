@@ -67,7 +67,8 @@ function initialize() {
 
               _.each(data.routes, function(route){
                 if(route.points.length > 0 && (route.name == "Belgium" || route.name == "France" || route.name == "Switzerland" || route.name == "UK")){
-                  //console.dir(route);
+                  $("#bus-stats").append("<div>" + route.name + ": " + (route.totalDistance * 1.65).toFixed(2) + " km travelled</div>");
+                  console.dir(route);
                   var lat_lng = [];
                   if(route.name == "Belgium"){
                     lat_lng.push(new google.maps.LatLng(50.8473592,4.3567822));
