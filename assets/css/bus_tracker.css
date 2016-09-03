@@ -42,7 +42,7 @@ div#map-canvas {
 	#bus-logo {
 		position: absolute;
 		top: 25px;
-		left: 5px;
+		left: 25%;
 		z-index:15;
 	}
 }
