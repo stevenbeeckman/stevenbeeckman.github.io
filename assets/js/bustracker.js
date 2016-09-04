@@ -1,10 +1,11 @@
 google.maps.event.addDomListener(window, 'load', initialize);
 
 function initialize() {
-    var myLatlng = new google.maps.LatLng(50.6977869,5.6730239);
+    //var myLatlng = new google.maps.LatLng(50.6977869,5.6730239);
+    var finalsLatLng = new google.maps.LatLng(51.3524818,6.1018597);
     var mapOptions = {
-        zoom: 6,
-        center: myLatlng,
+        zoom: 8,
+        center: finalsLatLng,
         scrollwheel: false,
         draggable: false,
         disableDefaultUI: true,
@@ -60,7 +61,9 @@ function initialize() {
 
 
     $(document).ready(function(){ 
-        addBusMarkers();
+        addBusDepartureMarkers();
+        addCordaIncubatorMarker();
+        addPirateSummitMarker();
         $.ajax({
           url: "http://subtracker.herokuapp.com/allPointsLowPrecision/2016",
             success: function(data){
@@ -140,7 +143,7 @@ function initialize() {
         window.map.fitBounds(bounds);
     }
 
-    function addBusMarkers() {
+    function addBusDepartureMarkers() {
       buses = _.map(competition.buses, function(bus) {
         var icon = {
           url: bus.marker,
@@ -177,5 +180,24 @@ function initialize() {
           break;
       }
       return marker;
+    }
+
+    function addCordaIncubatorMarker(){
+      var icon = {
+        url: 'assets/images/markers/corda_inc_transparant_map.png',
+        anchor: new google.maps.Point(0, 75),
+        origin: new google.maps.Point(0, 0),
+        size: new google.maps.Size(111, 75)
+      };
+
+      var corda_inc = new google.maps.Marker({
+        position: new google.maps.LatLng(50.952117, 5.352153), 
+        map: map, 
+        icon: icon
+      });
+    }
+
+    function addPirateSummitMarker(){
+
     }
 }
